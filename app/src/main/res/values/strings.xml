@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Charts</string>
+    <string name="btn_label1">T</string>
+    <string name="btn_label2">L</string>
+    <string name="btn_label3">H</string>
+    <string name="btn_label4">S</string>
+</resources>

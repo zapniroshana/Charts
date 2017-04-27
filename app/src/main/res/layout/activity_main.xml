@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.niroshana.charts.Home">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnTemp"
+        android:text="@string/btn_label1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLight"
+        android:text="@string/btn_label2"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnHum"
+        android:layout_toEndOf="@+id/btnHum" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnHum"
+        android:text="@string/btn_label3"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnSoil"
+        android:layout_toEndOf="@+id/btnSoil" />
+
+    <fragment
+        android:id="@+id/output"
+        class="com.example.niroshana.charts.LightFragment"
+
+        android:layout_width="300dp"
+        android:layout_height="400dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSoil"
+        android:text="@string/btn_label4"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btnTemp"
+        android:layout_toEndOf="@+id/btnTemp" />
+
+</RelativeLayout>
